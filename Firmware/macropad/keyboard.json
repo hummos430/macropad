@@ -1,0 +1,42 @@
+{
+    "keyboard_name": "macropad",
+    "manufacturer": "hummos430",
+    "maintainer": "hummos430",
+    "bootloader": "rp2040",
+    "processor": "RP2040",
+    "usb": {
+        "vid": "0xFEED",
+        "pid": "0x0000",
+        "device_version": "1.0.0"
+    },
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "extrakey": true,
+        "mousekey": true,
+        "encoder": true,
+        "via": true
+    },
+    "via": {
+        "protocol": 12
+    },
+    "matrix_pins": {
+        "direct": [["GP26", "GP27", "GP28", "GP29", "GP0"]]
+    },
+    "encoder": {
+        "rotary": [
+            {"pin_a": "GP2", "pin_b": "GP1"}
+        ]
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "x": 1, "y": 0, "label": "SW1"},
+                {"matrix": [0, 1], "x": 0, "y": 1, "label": "SW2"},
+                {"matrix": [0, 2], "x": 1, "y": 1, "label": "SW3"},
+                {"matrix": [0, 3], "x": 2, "y": 1, "label": "SW4"},
+                {"matrix": [0, 4], "x": 3, "y": 0, "label": "Encoder"}
+            ]
+        }
+    }
+}
